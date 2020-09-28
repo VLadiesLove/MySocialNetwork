@@ -1,0 +1,15 @@
+.nav{
+    grid-area: nav;
+    background-color: #000; 
+    color: #fff;
+    padding:20px;
+    
+  }
+
+.nav a{
+  text-decoration: none;
+}
+
+.nav a:visited{
+  color:#fff;
+}

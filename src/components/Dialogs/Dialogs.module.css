@@ -1,0 +1,18 @@
+.content{
+    grid-area: content;
+    background-color: #0ff;
+  }
+
+  .dialogs{
+    display:grid;
+    grid-template-columns:2fr 10fr;
+  }
+
+  .dialogUser{
+ 
+  }
+
+  .message{
+    margin-left:0px;
+  }
+
