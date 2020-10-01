@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Header from './components/Header/Header';
+import HeaderContainer from './components/Header/HeaderContainer';
 import Navbar from './components/Navbar/Navbar';
 import Profile from './components/Profile/Profile';
 import DialogsContainer from './components/Dialogs/DialogsContainer'
@@ -21,7 +21,7 @@ function App(props) {
   return (
     
     <div className="wrapper">
-        <Header />
+        <HeaderContainer />
         <Navbar />
         {/* <Route path='/profile' component={Profile} />
          
