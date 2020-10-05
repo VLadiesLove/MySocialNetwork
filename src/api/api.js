@@ -8,10 +8,30 @@ const instance = Axios.create({
 
 })
 
-const usersAPI ={
-    getUsers(currentPage = 1, pageSize = 10){
+const usersAPI = {
+    getUsers(currentPage = 1, pageSize = 10) {
         return instance.get(`users?page=${currentPage}&count=${pageSize}`).then(response => response.data)
-        }
+    },
+
+    follow(userId) {
+        return instance.post(`follow/${userId}`)
+
+    },
+
+    unfollow(userId) {
+        return instance.delete(`unfollow/${userId}`)
+    },
+
+    getProfile(userID) {
+        return instance.get(`profile/${userID}`)
     }
+
+}
+
+export const authAPI = {
+    me(){
+        return instance.get(`auth/me`)
+    }
+}
 
     export default usersAPI;

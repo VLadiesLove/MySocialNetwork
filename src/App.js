@@ -11,6 +11,7 @@ import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import UsersContainer from './components/Users/UsersContainer'
 import ProfileContainer from './components/Profile/ProfileContainer';
+import Login from './components/Login/Login';
 
 
 
@@ -31,6 +32,7 @@ function App(props) {
         <Route path='/dialogs' render={ () => {return <DialogsContainer store={props.store} />}} />
         <Route path='/profile/:userId?' render={ () => {return <ProfileContainer store={props.store} />}} />
         <Route path='/users' render={ () => {return <UsersContainer store={props.store} />}} />
+        <Route path='/login' render={ () => { return <Login />} } />
     </div>
     
   );
